@@ -1,0 +1,23 @@
+Warning! Your git working tree is dirty.
+It's recommended to commit all your changes before proceeding, so you can revert the changes made by this command if necessary.
+Git status is dirty but the command will continue because the terminal is not interactive.
+- Clearing android
+√ Cleared android code
+- Creating native directory (./android)
+√ Created native directory
+- Updating package.json
+√ Updated package.json | no changes
+- Running prebuild
+× Prebuild failed
+Error: [android.dangerous]: withAndroidDangerousBaseMod: Failed to find the instance of sharp used by the global sharp-cli package.
+Error: [android.dangerous]: withAndroidDangerousBaseMod: Failed to find the instance of sharp used by the global sharp-cli package.
+    at Object.findSharpInstanceAsync (C:\Users\lenvo\OneDrive\Desktop\New folder\period-tracker\node_modules\@expo\image-utils\build\sharp.js:187:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getSharpAsync (C:\Users\lenvo\OneDrive\Desktop\New folder\period-tracker\node_modules\@expo\image-utils\build\Image.js:111:17)
+    at async resizeAsync (C:\Users\lenvo\OneDrive\Desktop\New folder\period-tracker\node_modules\@expo\image-utils\build\Image.js:49:19)
+    at async generateImageAsync (C:\Users\lenvo\OneDrive\Desktop\New folder\period-tracker\node_modules\@expo\image-utils\build\Image.js:182:18)
+    at async generateIconAsync (C:\Users\lenvo\OneDrive\Desktop\New folder\period-tracker\node_modules\@expo\prebuild-config\build\plugins\icons\withAndroidIcons.js:344:11)
+    at async C:\Users\lenvo\OneDrive\Desktop\New folder\period-tracker\node_modules\@expo\prebuild-config\build\plugins\icons\withAndroidIcons.js:272:21
+    at async Promise.all (index 0)
+    at async generateMultiLayerImageAsync (C:\Users\lenvo\OneDrive\Desktop\New folder\period-tracker\node_modules\@expo\prebuild-config\build\plugins\icons\withAndroidIcons.js:268:3)
+    at async setIconAsync (C:\Users\lenvo\OneDrive\Desktop\New folder\period-tracker\node_modules\@expo\prebuild-config\build\plugins\icons\withAndroidIcons.js:155:3)
