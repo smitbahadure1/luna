@@ -184,7 +184,7 @@ const ProfileScreen = ({ navigation }: any) => {
             <StatusBar barStyle={isDarkMode ? "light-content" : "dark-content"} />
             {/* Background Layers */}
             <LinearGradient
-                colors={bgColors}
+                colors={bgColors as [string, string, ...string[]]}
                 style={StyleSheet.absoluteFill}
             />
             {/* Decoration Orbs */}

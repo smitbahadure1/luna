@@ -222,7 +222,7 @@ const CalendarScreen = () => {
     return (
         <View style={styles.container}>
             {/* Ambient Background */}
-            <LinearGradient colors={bgColors} style={StyleSheet.absoluteFill} />
+            <LinearGradient colors={bgColors as [string, string, ...string[]]} style={StyleSheet.absoluteFill} />
             <View style={[StyleSheet.absoluteFill, { overflow: 'hidden' }]}>
                 <View style={{
                     position: 'absolute', top: -100, right: -20, width: 300, height: 300,

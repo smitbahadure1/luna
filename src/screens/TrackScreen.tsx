@@ -151,7 +151,7 @@ const TrackScreen = () => {
     return (
         <View style={styles.mainContainer}>
             {/* Background Layers */}
-            <LinearGradient colors={bgColors} style={StyleSheet.absoluteFill} />
+            <LinearGradient colors={bgColors as [string, string, ...string[]]} style={StyleSheet.absoluteFill} />
             <View style={[StyleSheet.absoluteFill, { overflow: 'hidden' }]}>
                 <View style={{
                     position: 'absolute', top: -100, left: -50, width: 300, height: 300,

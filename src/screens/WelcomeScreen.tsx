@@ -229,7 +229,7 @@ const WelcomeScreen = () => {
             <StatusBar barStyle={isDarkMode ? "light-content" : "dark-content"} />
 
             {/* Background Gradient */}
-            <LinearGradient colors={bgColors} style={StyleSheet.absoluteFill} />
+            <LinearGradient colors={bgColors as [string, string, ...string[]]} style={StyleSheet.absoluteFill} />
 
             {/* Ambient Orbs */}
             <Animated.View style={{

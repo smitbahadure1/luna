@@ -74,7 +74,7 @@ const HomeScreen = () => {
 
             {/* Ambient Background Orbs/Gradients */}
             <LinearGradient
-                colors={bgColors}
+                colors={bgColors as [string, string, ...string[]]}
                 style={StyleSheet.absoluteFill}
             />
 
